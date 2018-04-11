@@ -1,0 +1,103 @@
+extends layout
+
+block content
+
+      table(cellpadding='0', cellspacing='0', border='0', height='100%', width='100%', bgcolor='#d7eff7', style='border-collapse:collapse;')
+        tbody
+          tr
+            td
+              // Email wrapper : BEGIN
+              table.email-container(border='0', width='600', cellpadding='0', cellspacing='0', align='center', style='width:600px; margin: auto;')
+                tbody
+                  tr
+                    td(style='padding-top: 15px;')
+                      // /////////////// PREHEADER TEXT : START /////////////////
+                      div(style='display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;')
+                        | Welcome to RecoveryPad.
+                      // /////////////// PREHEADER TEXT : END /////////////////
+                      // /////////////// HTML CONTENT FOR EMAIL: START /////////////////
+                      table(border='0', width='100%', cellpadding='0', cellspacing='0')
+                        // Main Email Body : BEGIN
+                      table(border='0', width='100%', cellpadding='0', cellspacing='0', bgcolor='#ffffff')
+                        // Single Fluid Image, No Crop : BEGIN
+                        tbody
+                          tr
+                            td.stack-column-center(valign='middle', align='center', bgcolor='#fff')
+                              a(href='http://www.recoverypad.com/', target='_blank')
+                                img.fluid(src='/assets/img/logo_final.png', alt='Recovery Pad', height='135', width='420', align='center', border='0', style='margin: auto; margin-top: 20px;')
+                          // Single Fluid Image, No Crop : END
+                          // MOBILE ONLY SPACE : START
+                          tr
+                            td
+                              table.mobile-space(align='center', border='0', cellpadding='0', cellspacing='0', width='100%')
+                                tbody
+                                  tr
+                                    td
+                          // MOBILE ONLY SPACE : END
+                          // Full Width, Fluid Column : BEGIN
+                          tr
+                            td(style='padding:4% 40px 6% 40px;')
+                              div(align='center', style="font-family:'Arial', sans-serif, 'Open Sans'; margin-top: 14px; color: #1fa4d3; font-size: 30px; text-align: center;margin-bottom: 20px;")
+                                | Thank you for joining recovery
+                                strong pad
+                              div(align='center', style="font-family:'Arial', sans-serif, 'Open Sans';  line-height: 21px; color: #39373a; font-size: 14px; text-align: left")
+                                p Hi !!display_name!!
+                                p
+                                  | Thank you for signing up for Recoverypad’s easy, affordable and effective coaching! You can start chatting with your coach right away by clicking on the link below…
+                                p
+                                  a(href='http://www.recoverypad.com/recoverypad-chat/', target='_blank') http://www.recoverypad.com/recoverypad-chat/
+                                p
+                                  | We know that you will greatly enjoy your experience and that it will prove very helpful to you. That said, please feel free to ask your coach about any questions or comments you might have about our service, or email us at 
+                                  a(href='mailto:info@recoverypad.com', target='_blank') info@recoverypad.com
+                                  | .
+                                p
+                                  | Your coach can’t wait to hear from you!
+                          // Full Width, Fluid Column : END
+                          // Thumbnail Left, Text Right : BEGIN
+                          tr
+                            td(align='center', valign='top', width='100%', bgcolor='#7ed8ec', style='padding: 10px 0 10px 0;')
+                              table(align='center', border='0', cellpadding='0', cellspacing='0', width='100%')
+                                tbody
+                                  tr
+                                    td.stack-column-center(width='33.33%', align='center', style='padding: 10px 0', valign='top')
+                                      a(href='http://www.recoverypad.com/recoverypad-chat/', target='_blank')
+                                        img.stack-column-center(src='/assets/img/RPchatnow.gif', width='300', alt='Chat Now', border='0')
+                          // Thumbnail Left, Text Right : END
+                          // Social Links : BEGIN
+                          tr
+                            td(width='100%', bgcolor='#d7eff7', style='padding: 5px 0 15px;')
+                              table(cellspacing='0', cellpadding='0', border='0', width='100%')
+                                tbody
+                                  tr
+                                    td.fluid(valign='top', width='40%', align='center')  
+                                    td.fluid(valign='top', width='2%', align='center')
+                                      a(href='https://twitter.com/michaelpantalon', target='_blank')
+                                        img.social_img(src='/assets/img/RPtwitter.png', alt='Twitter', border='0')
+                                    td.fluid(valign='top', width='1%', align='center')  
+                                    td.fluid(valign='top', width='2%', align='center')
+                                      a(href='https://www.facebook.com/search/top/?q=michael%20pantalon%20phd', target='_blank')
+                                        img.social_img(src='/assets/img/RPfacebook.png', alt='Facebook', border='0')
+                                    td.fluid(valign='top', width='1%', align='center')  
+                                    td.fluid(valign='top', width='2%', align='center')
+                                      a.social_img(href='https://www.linkedin.com/in/michael-v-pantalon-phd-5b0ba512', target='_blank', alt='LinkedIn', border='0')
+                                        img.social_img(src='/assets/img/RPlinkedin.png', alt='LinkedIn', border='0')
+                                    td.fluid(valign='top', width='40%', align='center')  
+                          // Social Links : END
+                      // Main Email Body : END
+          // Footer : BEGIN
+          tr
+            td
+              table(border='0', width='100%', cellpadding='0', cellspacing='0', align='center')
+                tbody
+                  tr
+                    td
+                      table(border='0', width='100%', cellpadding='0', cellspacing='0', align='center')
+                        tbody
+                          tr
+                            // Third Column : BEGIN
+                            td.stack-column-center(valign='top', align='center', width='100%', style="padding: 1% 0; 'Arial', sans-serif, 'Open Sans'; font-size: 10px; line-height: 1.3; color: #ffffff;")
+                            // Third Column : END
+      // /////////////// HTML CONTENT FOR EMAIL: END /////////////////
+      // Footer : END
+      // Email wrapper : END
+      script#wappalyzer(src='chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/inject.js')
